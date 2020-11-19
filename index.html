@@ -13,6 +13,7 @@
 
 <body>
     <div class="container">
+
         <div class="interest-container">
             <div>
                 <p><i class="fas fa-search"></i> Follow your interests.</p>
@@ -29,12 +30,83 @@
                 <p>Join twitter today</p>
 
                 <div class="buttons">
-                    <a href="detail/sign-up.html" class="btn btn-sigup">Sign up</a>
-                    <a href="detail/login.html" class="btn btn-login">Log in</a>
+                    <a href="#signUpForm" class="btn btn-sigup" id="signUpBtn">Sign up</a>
+                    <a href="#loginForm" class="btn btn-login" id="loginBtn">Log in</a>
                 </div>
             </div>
 
         </div>
+
+        <!-- sign up page  start-->
+        <div class="sign-up-container" id="signUp">
+            <form action="#" id="signUpForm">
+                <div class="icon">
+                    <i class="fas fa-times close" id="close"></i>
+                    <i class="fab fa-4x fa-twitter bird"></i>
+                    <button>Next</button>
+                </div>
+
+                <h1>Create your account</h1>
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input class="input" type="text" id="name" name="name">
+                </div>
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input class="input" type="password" id="password" name="password">
+                </div>
+                <div class="insider-text">
+                    <span>Use email instead</span>
+                    <h2>Date of birth</h2>
+                    <p>This will not be shown publicly, Confirm your own age, even if this account is for a bussiness, a pet or something else.</p>
+                </div>
+                <!-- <div class="sign-up-date">
+                    <div class="form-control">
+                        <label for="month">Month</label>
+                        <input class="input" type="month" id="month">
+                    </div>
+                    <div class="form-control">
+                        <label for="date">Day</label>
+                        <input class="input" type="day" id="day">
+                    </div>
+                    <div class="form-control">
+                        <label for="year">Year</label>
+                        <input class="input" type="year" id="year">
+                    </div>
+                </div> -->
+            </form>
+        </div>
+        <!-- end sign up page -->
+
+
+        <!-- start login page -->
+
+        <div class="sign-in-container" id="login">
+            <form action="#" id="loginForm">
+                <div class="header">
+                    <i class="fab fa-4x fa-twitter"></i>
+                    <h1>Log in to twitter</h1>
+                </div>
+                <div class="form-control">
+                    <label for="detail">Phone, email, or username</label>
+                    <input class="input" type="text" id="name">
+                </div>
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input class="input" type="password" id="password">
+                </div>
+
+                <button>Log in</button>
+                <div class="ftn">
+                    <a href="#">Forgot your password?</a>
+                    <a href="signUpForm">Sign up for Twitter</a>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- end login page -->
+
     </div>
 
 

@@ -25,7 +25,9 @@ body {
     grid-template-columns: repeat(2, 50%);
     align-items: center;
     width: 100%;
+    overflow: hidden;
     height: 100%;
+    position: relative;
 }
 
 
@@ -126,18 +128,31 @@ i {
 
 /* Start Sign up page design */
 
-.sign-up-container form {
-    overflow: hidden;
+.sign-up-container {
+    display: none;
+    overflow: auto;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
     background: var(--light-color);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.sign-up-container form {
     display: flex;
     color: var(--dark-color);
     flex-direction: column;
     padding: 5rem 50px;
     align-items: center;
-    margin: 5rem 15rem;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    justify-content: center;
+    margin: 2rem 15rem;
     border-radius: 15px;
     position: relative;
+    background: var(--light-color);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .sign-up-container .input {
@@ -163,11 +178,12 @@ i {
     color: var(--light-blue)
 }
 
-.sign-up-date {
+
+/* .sign-up-date {
     display: flex;
     margin: 2rem;
     font-size: 1.1rem;
-}
+} */
 
 .insider-text span {
     color: var(--light-blue);
@@ -185,6 +201,17 @@ p {
 .sign-up-container .icon .bird {
     position: absolute;
     top: 0;
+}
+
+.sign-up-container .icon .close {
+    position: absolute;
+    top: 1.8rem;
+    left: 1.8rem;
+    font-size: 1.2rem;
+}
+
+.close:hover {
+    cursor: pointer;
 }
 
 .sign-up-container .icon button {
@@ -216,6 +243,18 @@ p {
 
 /* start log in ppage design */
 
+.sign-in-container {
+    display: none;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: var(--light-color);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
 .sign-in-container form {
     color: var(--dark-color);
     display: flex;
@@ -223,7 +262,6 @@ p {
     justify-content: center;
     align-items: center;
     margin: 2rem;
-    background: var(--light-color);
     padding: 0 2rem;
 }
 
