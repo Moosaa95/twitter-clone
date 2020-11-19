@@ -1,0 +1,283 @@
+:root {
+    --light-color: #fff;
+    --dark-color: #14171a;
+    --light-blue: #1DA1F2;
+    --dark-gray: #657786;
+    --light-gray: #AAB8C2;
+    --extra-light-gray: #E1E8ED;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--light-color);
+    color: var(--light-color);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+
+/* general */
+
+label {
+    font-size: 1.6rem;
+}
+
+input {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    color: var(--light-blue);
+}
+
+
+/* general end */
+
+
+/* interest container */
+
+.interest-container {
+    background-image: url('../img/card_wide_blue.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 50%;
+}
+
+.interest-container div {
+    margin: 20rem 10rem;
+    width: 100%;
+}
+
+.interest-container div p {
+    margin: 3rem;
+    font-size: 2rem;
+}
+
+
+/* social container */
+
+.social-container {
+    color: var(--dark-color);
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons .btn {
+    border-radius: 20px;
+    margin: .9rem;
+    border: 1px solid var(--extra-light-gray);
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: .4rem 1rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    transition: transform 80ms ease-in;
+}
+
+.buttons .btn:active {
+    transform: scale(0.95);
+}
+
+.buttons .btn:focus {
+    outline: none;
+}
+
+.buttons .btn-sigup {
+    background-color: var(--light-blue);
+    color: var(--light-color);
+}
+
+.buttons .btn-login {
+    background-color: var(--light-color);
+    color: var(--light-blue);
+}
+
+.buttons .btn:hover {
+    background-color: var(--light-gray);
+}
+
+
+/* Start Sign up page design */
+
+.sign-up-container form {
+    overflow: hidden;
+    max-width: 100%;
+    background: var(--light-color);
+    display: flex;
+    color: var(--dark-color);
+    flex-direction: column;
+    padding: 5rem 50px;
+    align-items: center;
+    margin: 5rem 25rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 15px;
+    position: relative;
+}
+
+.sign-up-container .input {
+    border-bottom: 1px solid var(--dark-color);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+.sign-up-container .input:focus {
+    border: none;
+    outline: none;
+}
+
+.sign-up-container .form-control {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--extra-light-gray);
+    margin: .7rem;
+}
+
+.sign-up-container label {
+    color: var(--light-blue)
+}
+
+.sign-up-date {
+    display: flex;
+    margin: 2rem;
+    font-size: 1.1rem;
+}
+
+.insider-text span {
+    color: var(--light-blue);
+}
+
+.sign-up-container form span,
+p {
+    font-size: 1.3rem;
+}
+
+.sign-up-container .icon {
+    margin: 1rem;
+}
+
+.sign-up-container .icon .bird {
+    position: absolute;
+    top: 0;
+}
+
+.sign-up-container .icon button {
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    background-color: var(--light-blue);
+    color: var(--light-color);
+    position: absolute;
+    top: 1.8rem;
+    right: 1.8rem;
+    outline: none;
+    border: none;
+    transition: transform 90ms ease-in;
+    font-size: 1rem;
+}
+
+.sign-up-container .icon button:focus {
+    outline: none;
+}
+
+.sign-up-container .icon button:hover {
+    cursor: pointer;
+    transform: scale(0.98);
+}
+
+
+/* end sign up page design */
+
+
+/* start log in ppage design */
+
+.sign-in-container form {
+    color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    background: var(--light-color);
+    padding: 0 2rem;
+}
+
+.sign-in-container .input {
+    border-bottom: 1px solid var(--dark-color);
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+}
+
+.sign-in-container .input:focus {
+    outline: none;
+    border-bottom: 4px solid var(--light-blue);
+}
+
+.sign-in-container .form-control {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--extra-light-gray);
+    margin: .7rem;
+}
+
+.sign-in-container label {
+    color: var(--light-blue)
+}
+
+.sign-in-container button {
+    border-radius: 20px;
+    width: 50%;
+    margin: .9rem;
+    border: 1px solid var(--extra-light-gray);
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: .8rem 1rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    transition: transform 80ms ease-in;
+    background: var(--light-blue);
+    color: var(--light-color);
+}
+
+.sign-in-container button:active {
+    transform: scale(0.95);
+}
+
+.sign-in-container button:focus {
+    outline: none;
+}
+
+.sign-in-container .ftn {
+    display: flex;
+    font-size: 1.4rem;
+}
+
+.sign-in-container .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
