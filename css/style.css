@@ -123,7 +123,6 @@ i {
 
 .sign-up-container form {
     overflow: hidden;
-    max-width: 100%;
     background: var(--light-color);
     display: flex;
     color: var(--dark-color);
