@@ -15,8 +15,7 @@ const loginScreen = qs('#login')
 const loginBtn = qs('#loginBtn')
 const home = qs('#home')
 const fluid = qs('.fluid-container')
-const userName = qs('#name').value
-const pass = qs('#password').value
+
 const logoutBtn = qs('#logout')
 const profileBtn = qs('#profileBtn')
 
@@ -60,36 +59,43 @@ logoutBtn.addEventListener('click', function() {
 })
 
 signUp.addEventListener('submit', function(e) {
+
     //prevent it from reloading automatically
     e.preventDefault()
+    name = qs('#name').value = ""
+    password = qs('#password').value = ""
         //create an object to hold data from the sign up page
 
     let formData = {
-            name: userName,
-            password: pass
+            name: qs('#name').value,
+            password: qs('#password').value
 
         }
         //converting the object to string 
     localStorage.setItem('formData', JSON.stringify(formData))
     alert('success')
         //empty the input after submitting 
-    name = qs('#name').value = ""
-    password = qs('#password').value = ""
+
+
 
 })
 
 
 
+
 login.addEventListener('submit', function(e) {
+
     //prevent default
     e.preventDefault()
-
-
+    name = qs('#name').value
+    password = qs('#password').value
+    console.dir(name);
 
     var user = JSON.parse(localStorage.getItem('formData'))
-    if (userName === '' && pass === '') {
-        alert('fields should not be left empty')
-    } else if (user.name === userName && pass === user.password) {
+
+    if (user.name === name && password === user.password) {
+
+
         home.style.display = 'block'
         signUpScreen.style.display = 'none'
         loginScreen.style.display = 'none'
@@ -97,7 +103,10 @@ login.addEventListener('submit', function(e) {
 
 
 
+
+
+
     } else {
-        console.log('check fills');
+        alert('incorrect details');
     }
 })
