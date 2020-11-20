@@ -4,16 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- for live view -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Twitter. it's what's happening</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="message">login successfully</div>
+
         <div class="fluid-container" id="fluid">
             <div class="interest-container">
                 <div>
@@ -52,10 +50,12 @@
                 <div class="form-control">
                     <label for="name">Name</label>
                     <input class="input" type="text" id="name" name="name">
+
                 </div>
                 <div class="form-control">
                     <label for="password">Password</label>
                     <input class="input" type="password" id="password" name="password">
+
                 </div>
                 <div class="insider-text">
                     <span>Use email instead</span>
@@ -90,12 +90,14 @@
                     <h1>Log in to twitter</h1>
                 </div>
                 <div class="form-control">
-                    <label for="detail">Phone, email, or username</label>
+                    <label for="name">Phone, email, or username</label>
                     <input class="input" type="text" id="name">
+
                 </div>
                 <div class="form-control">
                     <label for="password">Password</label>
                     <input class="input" type="password" id="password">
+
                 </div>
 
                 <button>Log in</button>
@@ -150,12 +152,13 @@
                     <div class="profile-link">
                         <ul>
                             <li class="name-link links--hover">
-                                <img src="prdt-1.jpg" style="border-radius: 50%; width:20% ;" alt="pic">
-                                <a href="#">
+                                <img src="img/card_wide_blue.png" class="profile-img" alt="pic">
+                                <a href="#" id="profileBtn">
                                     <h3>Musa Abdullahi</h3>
                                     <p>@musaabdullahi45</p>
                                 </a>
                                 <i class="fas fa-chevron-down links--hover"></i>
+                                <a href="#" id="logout" class="logout">Logout</a>
                             </li>
 
                         </ul>
@@ -171,17 +174,18 @@
                     </div>
                     <form action="" class="border--line">
                         <div class="inner__form">
-                            <img src="../prdt-1.jpg" alt="pic" class="image__form">
+                            <img src="img/card_wide_blue.png" alt="pic" class="profile-img">
                             <input type="text" placeholder="What's Happeningg?" class="input__form">
 
                         </div>
                         <div class="logo__links">
                             <ul class="logos">
                                 <li>
-                                    <a href="#">logo--one</a>
-                                    <a href="#">logo--one</a>
-                                    <a href="#">logo--one</a>
-                                    <a href="#">logo--one</a>
+                                    <a href="#"><i class="fas fa-2x fa-image"></i></a>
+                                    <a href="#"><i class="fas fa-2x fa-spinner"></i></a>
+                                    <a href="#"><i class="fas fa-2x fa-poll"></i></a>
+                                    <a href="#"><i class="fas fa-2x fa-smile"></i></a>
+                                    <a href="#"><i class="fa fa-2x fa-calendar"></i></a>
                                 </li>
                             </ul>
                             <a href="#" class="btn btn--submit">Tweet</a>
@@ -192,7 +196,7 @@
                         <div class="user__info">
 
                             <ul class="user__list">
-                                <img src="" alt="tweet" class="user--image">
+                                <img src="img/card_wide_blue.png" alt="tweet" class="profile-img">
                                 <li><a href="#">Santiago</a>
                                     <p>@svoinnrf..</p>
                                     <p>Sept 18</p>
@@ -202,47 +206,91 @@
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus voluptatibus, alias nihil voluptas quibusdam eius. Fugiat dignissimos, sit perspiciatis suscipit, saepe ratione laboriosam quod, omnis voluptate blanditiis
                                 perferendis veritatis labore.</p>
                             <ul class="item__logos">
-                                <li><a href="#">logo-two</a></li>
-                                <li><a href="#">logo-two</a></li>
-                                <li><a href="#">logo-two</a></li>
-                                <li><a href="#">logo-two</a></li>
+                                <li><a href="#"><i class="fas fa-comment"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-download"></i></a></li>
                             </ul>
 
                         </div>
                         <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="tweet border--line" style="display: flex; justify-content: space-between;">
+                    <div class="tweet border--line">
 
-                        <div class="user--info" style="display: flex;">
-                            <img src="" alt="tweet" class="user--image">
-                            <ul class="user--list">
-                                <li style="display: flex;"><a href="#">Santiago</a>
-                                    <p>svoinnrf</p>
-                                    <p>39m</p>
+                        <div class="user__info">
+
+                            <ul class="user__list">
+                                <img src="img/card_wide_blue.png" alt="tweet" class="profile-img">
+                                <li><a href="#">Santiago</a>
+                                    <p>@svoinnrf..</p>
+                                    <p>Sept 18</p>
                                 </li>
                             </ul>
+
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus voluptatibus, alias nihil voluptas quibusdam eius. Fugiat dignissimos, sit perspiciatis suscipit, saepe ratione laboriosam quod, omnis voluptate blanditiis
                                 perferendis veritatis labore.</p>
+                            <ul class="item__logos">
+                                <li><a href="#"><i class="fas fa-comment"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-download"></i></a></li>
+                            </ul>
 
                         </div>
                         <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="tweet border--line" style="display: flex; justify-content: space-between;">
 
-                        <div class="user--info" style="display: flex;">
-                            <img src="" alt="tweet" class="user--image">
-                            <ul class="user--list">
-                                <li style="display: flex;"><a href="#">Santiago</a>
-                                    <p>svoinnrf</p>
-                                    <p>39m</p>
+                    <div class="tweet border--line">
+
+                        <div class="user__info">
+
+                            <ul class="user__list">
+                                <img src="img/card_wide_blue.png" alt="tweet" class="profile-img">
+                                <li><a href="#">Santiago</a>
+                                    <p>@svoinnrf..</p>
+                                    <p>Sept 18</p>
                                 </li>
                             </ul>
+
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus voluptatibus, alias nihil voluptas quibusdam eius. Fugiat dignissimos, sit perspiciatis suscipit, saepe ratione laboriosam quod, omnis voluptate blanditiis
                                 perferendis veritatis labore.</p>
+                            <ul class="item__logos">
+                                <li><a href="#"><i class="fas fa-comment"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-download"></i></a></li>
+                            </ul>
 
                         </div>
                         <i class="fas fa-chevron-down"></i>
                     </div>
+
+                    <div class="tweet border--line">
+
+                        <div class="user__info">
+
+                            <ul class="user__list">
+                                <img src="img/card_wide_blue.png" alt="tweet" class="profile-img">
+                                <li><a href="#">Santiago</a>
+                                    <p>@svoinnrf..</p>
+                                    <p>Sept 18</p>
+                                </li>
+                            </ul>
+
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus voluptatibus, alias nihil voluptas quibusdam eius. Fugiat dignissimos, sit perspiciatis suscipit, saepe ratione laboriosam quod, omnis voluptate blanditiis
+                                perferendis veritatis labore.</p>
+                            <ul class="item__logos">
+                                <li><a href="#"><i class="fas fa-comment"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-download"></i></a></li>
+                            </ul>
+
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+
+
 
                 </div>
                 <div class="left-aside">
@@ -251,12 +299,12 @@
                         <i class="fab fa-search"></i>
                     </form>
                     <div class="trending--box">
-                        <div class="trending--header" style="display: flex; justify-content: space-evenly;">
+                        <div class="trending--header">
                             <h2>Trends for you</h2>
                             <i class="fas fa-cog"></i>
                         </div>
                         <ul class="trending--list">
-                            <li class="list--trend" style="display: flex; justify-content: space-around;">
+                            <li class="list--trend">
 
                                 <a href="#">
                                     <p>Soccer. Training</p>
@@ -266,7 +314,7 @@
                                 <i class="fas fa-chevron-down"></i>
 
                             </li>
-                            <li class="list--trend" style="display: flex; justify-content: space-around;">
+                            <li class="list--trend">
 
                                 <a href="#">
                                     <p>Soccer. Training</p>
@@ -276,7 +324,7 @@
                                 <i class="fas fa-chevron-down"></i>
 
                             </li>
-                            <li class="list--trend" style="display: flex; justify-content: space-around;">
+                            <li class="list--trend">
 
                                 <a href="#">
                                     <p>Soccer. Training</p>

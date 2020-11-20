@@ -428,10 +428,18 @@ ul {
     position: relative;
 }
 
+.logout {
+    display: none;
+    font-size: 1.2rem;
+    padding: .8rem 2rem;
+    color: var(--light-color);
+    background: var(--light-blue);
+}
+
 .grid .name-link {
     display: flex;
     position: absolute;
-    bottom: -270px;
+    bottom: -180px;
     transition: background .2s ease-in;
 }
 
@@ -495,8 +503,6 @@ ul {
 
 .grid .logos li a {
     margin-left: 1rem;
-    border-radius: 50%;
-    border: 2px solid var(--dark-color);
 }
 
 .btn--submit {
@@ -524,12 +530,57 @@ ul {
 .item__logos {
     display: flex;
     justify-content: space-evenly;
-    margin-right: 25rem;
+    margin-right: 10rem 5rem;
+    font-size: 1.2rem;
+    align-items: center;
 }
 
 .user__info p {
     margin-left: 2rem;
     width: 80%;
+}
+
+.trending--box {
+    margin: 2rem;
+    height: auto;
+    background: var(--extra-light-gray);
+    border-radius: 20px;
+    width: 100%;
+}
+
+.trending--header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list--trend {
+    display: flex;
+    justify-content: space-around;
+}
+
+.user--list li,
+.user--info {
+    display: flex;
+}
+
+.tweet .border--line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.left-aside form {
+    margin: 2rem;
+}
+
+.left-aside form input {
+    width: 100%;
+    height: 20px;
 }
 
 
