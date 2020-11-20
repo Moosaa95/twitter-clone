@@ -89,7 +89,7 @@ login.addEventListener('submit', function(e) {
     e.preventDefault()
     name = qs('#name').value
     password = qs('#password').value
-    console.dir(name);
+
 
     var user = JSON.parse(localStorage.getItem('formData'))
 

@@ -541,7 +541,7 @@ ul {
 }
 
 .trending--box {
-    margin: 2rem;
+    margin: .8rem;
     height: auto;
     background: var(--extra-light-gray);
     border-radius: 20px;
