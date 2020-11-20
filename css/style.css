@@ -5,6 +5,8 @@
     --dark-gray: #657786;
     --light-gray: #AAB8C2;
     --extra-light-gray: #E1E8ED;
+    --sky-blue: #3e779d;
+    --light-sky-blue: #65a9d7;
 }
 
 * {
@@ -21,13 +23,21 @@ body {
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    align-items: center;
     width: 100%;
     overflow: hidden;
     height: 100%;
     position: relative;
+}
+
+.fluid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+}
+
+.message {
+    display: none;
+    color: green;
 }
 
 
@@ -323,3 +333,204 @@ p {
     align-items: center;
     margin: 1rem;
 }
+
+
+/* home page design start */
+
+.home-page {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.grid {
+    display: grid;
+    /* grid-template-columns: 1fr 3fr 1fr; */
+    grid-template-columns: 1fr 37% 1fr;
+    justify-items: center;
+    color: var(--dark-color);
+}
+
+ul {
+    list-style: none;
+}
+
+.grid .aside--links {
+    margin: 0 9.5em;
+    height: auto;
+    width: auto;
+}
+
+.grid .links {
+    font-size: 1.5rem;
+}
+
+.grid .links a {
+    display: flex;
+    transition: background .2s ease-in;
+    padding: 1rem .4rem;
+    position: relative;
+    width: 70%;
+    border-radius: 20px;
+}
+
+.grid .links--hover:hover a {
+    background: var(--light-gray);
+}
+
+.grid .links a:active {
+    box-shadow: none;
+    top: 5px;
+    color: var(--dark-gray);
+}
+
+.grid .links:nth-child(9) a {
+    margin-bottom: 20px;
+}
+
+.grid .links:nth-child(9) a i {
+    border: 3px solid rgb(56, 53, 53);
+    border-radius: 50%;
+    padding: .3rem .4rem;
+}
+
+.grid .links p {
+    margin: 0 1rem;
+    color: var(--dark-color);
+}
+
+.grid .btn {
+    padding: .6rem .9rem;
+    /* background: #7fb8eb; */
+    border-radius: 30px;
+    border-top: 1px solid var(--light-gray);
+    background: var(--light-gray);
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--sky-blue)), to(var(--light-sky-blue)));
+    background: -webkit-linear-gradient(top, var(--sky-blue), var(--light-sky-blue));
+    background: -moz-linear-gradient(top, var(--sky-blue), var(--light-sky-blue));
+}
+
+.grid .btn:hover {
+    background: var(--light-sky-blue);
+}
+
+.grid .btn--tweet {
+    padding: .6rem 6rem;
+    text-align: center;
+    font-size: 1.9rem;
+    color: var(--dark-color);
+}
+
+.grid .profile-link ul {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.grid .name-link {
+    display: flex;
+    position: absolute;
+    bottom: -270px;
+    transition: background .2s ease-in;
+}
+
+.grid .name-link i {
+    margin: 20px 0 0 70px;
+    cursor: pointer;
+}
+
+.grid .border--line {
+    width: 850px;
+    border: 1px solid var(--light-sky-blue);
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.grid .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid .inner__form {
+    display: flex;
+}
+
+.grid .image__form {
+    order: 1;
+    border-radius: 50%;
+    width: 3rem;
+}
+
+.grid .input__form {
+    flex: 1;
+    order: 2;
+    height: 70px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgb(56, 53, 53, .5);
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.grid input::placeholder {
+    font-size: 1.2rem;
+}
+
+.grid input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(56, 53, 53);
+}
+
+.grid input:focus::placeholder {
+    opacity: 0.5;
+}
+
+.grid .logo__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.grid .logos li a {
+    margin-left: 1rem;
+    border-radius: 50%;
+    border: 2px solid var(--dark-color);
+}
+
+.btn--submit {
+    margin: .51rem;
+}
+
+.tweet {
+    display: flex;
+}
+
+.user__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user__list {
+    display: flex;
+}
+
+.user__list li {
+    display: flex;
+    margin-left: 2rem;
+}
+
+.item__logos {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 25rem;
+}
+
+.user__info p {
+    margin-left: 2rem;
+    width: 80%;
+}
+
+
+/* home page design ends */
